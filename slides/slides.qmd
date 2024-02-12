@@ -1,7 +1,10 @@
 ---
 title: "Intro a Git y Github"
 author: "Diego Canul"
-format: revealjs
+format: 
+    revealjs:
+        slide-number: c
+        theme: dark
 ---
 ## Version Control System 
 Un VCS es un sistema que registra los cambios sobre un archivo o conjunto de archivos, de tal forma que se puede llamar a una versión en específico después.
@@ -55,7 +58,8 @@ git config --global user.name "Your Name"
 1. ``` git status ```
 1. Trabajo normal
 1. ``` git status ```
-1. ``` git add file ```
+1. ``` git add file ``` ó ``` git commit -a -m "mensaje del commit ```
+
 1. ```git commit -m "mensaje del commit" ```
 :::
 
@@ -65,11 +69,29 @@ git config --global user.name "Your Name"
 1. ``` git add .```?
 1. La importancia del mensaje en el commit
 
-## Regresar al pasado
-git revert git checkout
+## Archivos no deseados
+Crea un archivo y un directorio, agregalo a .gitignore
 
-## Github
-![](./img/scenario2.png){fig-align="center"}
+
+## Regresar al pasado {.scrollable}
+Hacer cambios con precaución, en algunos casos los cambios son irreversibles.
+
+Revisar el historial:
+
+1. ``` git log```
+
+No mantener los cambios en la versión actual es decir, desmodificar el archivo (modificar un archivo y revisar el status):
+
+1. ``` git restore```
+
+``` git restore ``` es un **comando peligroso**, cualquier cambio hecho es ignorado. No debe ser usado a menos que estés seguro de no querer guardar los cambios hechos.
+
+## Github {.smaller}
+Es una plataforma online que aloja Git y permite el desarrollo colaborativo
+
+. . .
+
+![](./img/scenario2.png){fig-align="center" width=60%}
 
 ## Configuración del SSH {.scrollable}
 **En la terminal:**
@@ -92,11 +114,25 @@ git revert git checkout
 1. :-)
 
 ## Clonando un repo
-1. 
+Otra forma de crear un repo es creando uno desde [github.com](github.com) y luego haciendo usando el comando ``` git clone github.com/tu_repo ```.
 
-## Interactuando con github
-1. Actualiza el repositorio que clonaste de manera local
-1. Crea un archivo titulado "tu_nombre.csv" y realiza un push al repositorio
+Puedes clonar un repo y usarlo de manera local o personal, o clonar un repo donde participas en un proyecto.
+
+## Interactuando con github I {.scrollable}
+1. Abre el siguiente repo: [https://github.com/dcanulr/git_eolica](https://github.com/dcanulr/git_eolica) y copia el link clone ssh
+
+1. Realiza el clon del repo ``` git clone git@github.com:dcanulr/git_eolica.git```
+
+1. Crea un archivo nombrado "tu_nombre.csv" y actualiza el repo 
+
+1. Una vez hecho el commit local, revisa ``` git status ``` actualiza el repo remoto con ``` git push```
+
+## Interactuando con github II {.scrollable}
+1. Si existen cambios hechos en el repo remoto se verán reflejados en el status
+
+1. Para actualizar los cambios remotos utiliza ``` git pull```
+
+1. Trabaja de manera local y realiza el commit [local], y después realiza el push [remoto]
 
 ## 
 ![](./img/scenario3.png)
