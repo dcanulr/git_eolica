@@ -3,10 +3,18 @@ title: "Intro a Git y Github"
 author: "Diego Canul"
 format: revealjs
 ---
+## Version Control System 
+Un VCS es un sistema que registra los cambios sobre un archivo o conjunto de archivos, de tal forma que se puede llamar a una versión en específico después.
+
+Usar un VCS generalmente implica que si rompes tus archivos o los pierdes, fácilmente los puedes recuperar.
+
+## Git
+Git es un _Distributed Version Control System_ (DVCS), donde se accede a un repositorio que contiene las últimas versiones de los archivos así como su historial completo. Cada _clon_ del repositorio contiene un respaldo completo de toda la información.
+
 ## Git
 ![](./img/scenario1.png){fig-align="center"}
 
-## Git y Github
+## Git
 Verificar la configuración de git
 ```
 git config --list
