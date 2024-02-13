@@ -24,7 +24,7 @@ Git es un _Distributed Version Control System_ (DVCS), donde se accede a un repo
 ## Git
 Verificar la configuración de git
 ```
-git config --list
+git config --global --list
 ```
 Si no hay una credenciales:
 ```
