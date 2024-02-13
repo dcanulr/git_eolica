@@ -78,7 +78,7 @@ Crea un archivo y un directorio, agregalo a .gitignore
 
 
 ## Regresar al pasado {.scrollable}
-Hacer cambios con precaución, en algunos casos los cambios son irreversibles.
+EL VCS permite regresar a versiones anteriores, existen varias formas de haceer esto. Sin embargo, los cambios deben realizarse con precaución, en algunos casos los cambios son irreversibles.
 
 Revisar el historial:
 
@@ -86,9 +86,11 @@ Revisar el historial:
 
 No mantener los cambios en la versión actual es decir, desmodificar el archivo (modificar un archivo y revisar el status):
 
-1. ``` git restore```
+2. ``` git restore```
 
 ``` git restore ``` es un **comando peligroso**, cualquier cambio hecho es ignorado. No debe ser usado a menos que estés seguro de no querer guardar los cambios hechos.
+
+[Otros comandos](https://github.com/aspp-latam/2023-mexico-git-and-github/tree/main)
 
 ## Github {.smaller}
 Es una plataforma online que aloja Git y permite el desarrollo colaborativo
