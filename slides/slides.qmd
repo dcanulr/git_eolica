@@ -14,8 +14,12 @@ Usar un VCS generalmente implica que si rompes tus archivos o los pierdes, fáci
 ## Git
 Git es un _Distributed Version Control System_ (DVCS), donde se accede a un repositorio que contiene las últimas versiones de los archivos así como su historial completo. Cada _clon_ del repositorio contiene un respaldo completo de toda la información.
 
-## Git
+## Git {.scrollable}
 ![](./img/scenario1.png){fig-align="center"}
+
+::: aside
+[https://github.com/aspp-latam/2023-mexico-git-and-github](https://github.com/aspp-latam/2023-mexico-git-and-github)
+:::
 
 ## Git
 Verificar la configuración de git
@@ -134,8 +138,16 @@ Puedes clonar un repo y usarlo de manera local o personal, o clonar un repo dond
 
 1. Trabaja de manera local y realiza el commit [local], y después realiza el push [remoto]
 
-## 
+## {.scrollable}
 ![](./img/scenario3.png)
 
-##
+::: aside
+[https://github.com/aspp-latam/2023-mexico-git-and-github](https://github.com/aspp-latam/2023-mexico-git-and-github)
+:::
+
+## {.scrollable}
 ![](./img/scenario5.png)
+
+::: aside
+[https://github.com/aspp-latam/2023-mexico-git-and-github](https://github.com/aspp-latam/2023-mexico-git-and-github)
+:::
